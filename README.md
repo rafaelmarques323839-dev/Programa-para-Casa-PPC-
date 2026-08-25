@@ -15,7 +15,7 @@ O repositório está organizado em diretórios isolados para cada prática:
 
 * `PPC_01/`: Contém a resolução do problema de sedimentação de uma partícula (Equações Diferenciais Ordinárias).
   * `README.md`: Documentação específica da prática, com dicionário de variáveis e validação.
-  * `main.py`: Script principal com a implementação do método de Runge-Kutta (RK4).
+  * `ppc_1_(python).py`: Script principal com a implementação do método de Runge-Kutta (RK4).
 
 ## 📚 Bibliografia Geral
 * CHAPRA, S. C.; CANALE, R. P. *Métodos Numéricos para Engenharia*. 5ª edição. McGraw Hill, 2008.
