@@ -4,8 +4,8 @@
 **Departamento:** Departamento de Engenharia Mecânica (ENM)
 **Disciplina:** Cálculo Numérico Aplicado (CNA)
 **Semestre:** 2026/1
-**Discente:** [Seu Nome Completo]
-**Matrícula:** [Sua Matrícula]
+**Discente:** Rafael Marques de Paiva
+**Matrícula:** 241024956
 
 ## 🎯 Motivação
 Este repositório armazena as implementações computacionais desenvolvidas para a disciplina de Cálculo Numérico Aplicado. O objetivo é construir algoritmos "do zero", sem o uso de caixas-pretas, para resolver problemas físicos e matemáticos da engenharia, garantindo a reprodutibilidade e a transparência do código (filosofia Open Source).
