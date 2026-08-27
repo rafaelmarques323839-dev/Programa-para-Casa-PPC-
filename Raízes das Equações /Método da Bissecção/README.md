@@ -15,7 +15,7 @@ O método numérico é ideal para resolver equações implícitas onde a variáv
 
 ## 🔧 Como utilizar
 
-1. Salve o arquivo principal em sua máquina (ex: `bisseccao.py`).
+1. Salve o arquivo principal em sua máquina.
 2. Abra o terminal e navegue até a pasta onde o arquivo está salvo.
 3. Execute o script com o comando:
    ```bash
