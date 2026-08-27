@@ -19,7 +19,7 @@ O método numérico é ideal para resolver equações implícitas onde a variáv
 2. Abra o terminal e navegue até a pasta onde o arquivo está salvo.
 3. Execute o script com o comando:
    ```bash
-   python bisseccao.py
+   Raizes_de_Funcoes_Metodo_da_Bisseccao.py
    ```
 4. Siga as instruções na tela:
    - **Equação:** Escreva usando a sintaxe do Python (ex: `x**3 - 9*x + 3` ou `math.cos(x) - x`).
