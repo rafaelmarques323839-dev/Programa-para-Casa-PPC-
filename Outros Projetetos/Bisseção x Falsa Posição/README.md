@@ -1,4 +1,4 @@
-# PPC 02 - Resolução de Equações Não Lineares: Métodos da Bisseção e da Falsa Posição
+Resolução de Equações Não Lineares: Métodos da Bisseção e da Falsa Posição
 **Universidade de Brasília**
 **Cálculo Numérico Aplicado**
 
