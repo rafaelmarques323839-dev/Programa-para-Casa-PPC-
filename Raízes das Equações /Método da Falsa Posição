@@ -1,0 +1,56 @@
+import math
+
+def falsa_posicao(f, a, b, tol, max_iter=100):
+    """
+    Encontra a raiz de uma função f no intervalo [a, b] pelo método da falsa posição.
+    """
+    # Verifica o Teorema de Bolzano (mudança de sinal)
+    if f(a) * f(b) >= 0:
+        raise ValueError("A função deve ter sinais opostos nos limites 'a' e 'b'.")
+
+    for i in range(max_iter):
+        # Fórmula da falsa posição: c = (a*f(b) - b*f(a)) / (f(b) - f(a))
+        c = (a * f(b) - b * f(a)) / (f(b) - f(a))
+
+        # Critério de parada: tolerância atingida
+        if abs(f(c)) < tol:
+            return c, i + 1
+
+        # Substituição do limite de acordo com o sinal
+        if f(a) * f(c) < 0:
+            b = c
+        else:
+            a = c
+
+    return c, max_iter
+
+if __name__ == "__main__":
+    print("=== Calculadora: Método da Falsa Posição ===")
+    
+    # Recebe a função do usuário
+    eq_str = input("Digite a equação em função de 'x' (ex: x**3 - 9*x + 3 ou cos(x) - x): ")
+
+    # Monta a função em tempo real com segurança básica
+    def f(x):
+        # Importa todas as funções matemáticas para o ambiente da equação (ex: sin, cos, log)
+        ambiente_seguro = {k: v for k, v in math.__dict__.items() if not k.startswith("__")}
+        ambiente_seguro['x'] = x
+        return eval(eq_str, {"__builtins__": None}, ambiente_seguro)
+
+    try:
+        # Recebe os parâmetros numéricos
+        a = float(input("Limite inferior do intervalo (a): "))
+        b = float(input("Limite superior do intervalo (b): "))
+        tol = float(input("Tolerância desejada (ex: 1e-6): "))
+
+        # Executa o método
+        raiz, iteracoes = falsa_posicao(f, a, b, tol)
+
+        # Exibe os resultados
+        print("\n--- Resultados ---")
+        print(f"Raiz aproximada: {raiz:.8f}")
+        print(f"Iterações realizadas: {iteracoes}")
+        print(f"Erro final f(raiz): {f(raiz):.2e}")
+
+    except Exception as e:
+        print(f"\nErro durante a execução: {e}")
