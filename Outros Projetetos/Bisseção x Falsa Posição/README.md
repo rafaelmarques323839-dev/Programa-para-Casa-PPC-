@@ -21,7 +21,7 @@ A implementação foi desenvolvida inteiramente com Python puro (padrão embutid
 
 ## Especificação de I/O (Entradas e Saídas)
 * **Inputs:** A alimentação do modelo é feita via variáveis declaradas diretamente no código-fonte (*hardcoded*). Os parâmetros do canal ($B=20$, $Q=5$, $S=0,0002$, $n=0,03$) estão incorporados na inicialização da função objetivo de vazão residual e na fórmula de velocidade[cite: 3]. 
-* **Outputs:** O programa retorna informações textuais diretamente no terminal (console). Durante a execução, ele imprime o passo a passo iterativo de cada método numérico (número da iteração $k$, limites atuais $H_l$ e $H_u$, raiz aproximada $H_r$ e o valor da função $f(H_r)$). Ao atingir a tolerância estipulada, ele retorna os valores finais em ponto flutuante da profundidade $H$ e da velocidade média $U$ correspondente[cite: 3].
+* **Outputs:** O programa retorna informações textuais diretamente no terminal (console). Durante a execução, ele imprime o passo a passo iterativo de cada método numérico (número da iteração $k$, limites atuais $H_l$ e $H_u$, raiz aproximada $H_r$ e o valor da função $$f(H_r)$$). Ao atingir a tolerância estipulada, ele retorna os valores finais em ponto flutuante da profundidade $H$ e da velocidade média $U$ correspondente[cite: 3].
 
 ## Procedimentos de Execução
 Para executar a aplicação, certifique-se de ter o Python instalado na máquina.
