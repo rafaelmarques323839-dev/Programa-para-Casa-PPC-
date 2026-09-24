@@ -36,4 +36,4 @@ Para executar o algoritmo, certifique-se de estar no diretório raiz desta PPC e
 
 ```bash
 # Executa o script e imprime os resultados da validação e da APC no console, finalizando com a plotagem gráfica.
-python ppc2_bairstow.py
+python ppc_2.py
